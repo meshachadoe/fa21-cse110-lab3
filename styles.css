@@ -1,0 +1,134 @@
+/* HEADER */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+nav { 
+    background-color: rgb(188, 238, 235);
+    margin-top: 2.5vh;
+}
+
+nav > h3 {
+    margin-bottom: 0.2pc;
+}
+
+nav > ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li {
+    margin-right: 0.5cm;
+}
+
+header {
+    position: relative;
+}
+
+header > h3 {
+    position: absolute;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    right: 0;
+    top: 0;
+}
+
+.header__attendance {
+    padding: 0 20px 0 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 10px;
+}
+
+.header__attendance > h3 {
+    text-decoration: underline;
+}
+
+.header__attendance > ul {
+    margin-left: 1em;
+    line-height: 3ex;
+}
+
+/* SECTIONS */
+
+.section__agenda > ol > li{
+    max-width: 280px;
+    max-height: 200px;
+}
+
+.section__notes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.section__notes-grid summary:active {
+    color: #222;
+}
+
+.main__attachment {
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: auto;
+}
+
+.section__membership > form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section__membership > form > button {
+    position: absolute;
+    background-color: teal;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    right: 10px;
+    bottom: 10px;
+}
+
+.section__membership > form > button:hover {
+    background-color: #222;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.section__membership > form > button:active {
+    background-color: #555;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.section__membership > h2 {
+    height: 10vh;
+}
+
+/* MEDIA QUERY: MOBILE */
+
+@media only screen and (max-width: 500px) {
+    header > h3 {
+        position: relative;
+    }
+    
+    .section__notes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section__membership > form {
+        flex-direction: column;
+    }
+}

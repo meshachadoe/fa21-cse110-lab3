@@ -4,7 +4,27 @@
         <title>Meeting Notes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="./assets/favicon.png" type="image/x-icon"/>
+        <style>
+            h1 {
+                color: teal;
+            }
+
+            h2 {
+                color: rgb(32,178,170);
+            }
+
+            h3 {
+                color: #008080;
+            }
+
+            details > summary {
+                color: hsl(200, 50%, 50%);
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -17,10 +37,10 @@
         </nav>
         <br/>
         <header>
-            <h1>Project Initial Brainstorm</h1>
+            <h1 style="text-align: center;">Project Initial Brainstorm</h1>
             <h2>Brainstorming</h2>
             <h3>Saturday, October 3, 2021</h3>
-            <div>
+            <div class="header__attendance">
                 <h3>Attendance List</h3>
                 <ul>
                     <li><em>Meshach</em> Adoe</li>
@@ -30,41 +50,43 @@
             </div>
         </header>
         <hr/>
-        <section>
+        <section class="section__agenda">
             <h2><i>Meeting Agenda</i></h2>
             <ol>
                 <li>Team Social/Icebreaker</li>
                 <li>Addressing upcoming <strong>deadlines</strong> and <strong>deliverables</strong></li>
-                <li>Assigning tasks for next sprint</li>
+                <li style="display: none;">Assigning tasks for next sprint</li>
             </ol>
         </section>
         <main>
             <h2><i>Meeting Notes</i></h2>
-            <details>
-                <summary>Unfinished Tasks/Discussions</summary>
-                <ul>
-                    <li>Technology stack to use for the project</li>
-                    <li>Set up regular meeting times at Price Center</li>
-                </ul>
-            </details>
-            <details>
-                <summary>Tasks/Discussions to Discuss</summary>
-                <ul>
-                    <li>Ask for permission from Professor to conduct user interviews</li>
-                    <li>Assigning tasks for initial UI Design and brainstorm interface ideas</li>
-                </ul>
-            </details>
-            <div>
-                <h4>Miscellaneous Comments/Concerns</h4>
-                <ul>
-                    <li>Address past miscommunication within the team</li>
-                    <li>Should have one-on-ones between the team to help get to know one another</li>
-                </ul>
+            <div class="section__notes-grid">
+                <details>
+                    <summary>Unfinished Tasks/Discussions</summary>
+                    <ul>
+                        <li>Technology stack to use for the project</li>
+                        <li>Set up regular meeting times at Price Center</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Tasks/Discussions to Discuss</summary>
+                    <ul>
+                        <li>Ask for permission from Professor to conduct user interviews</li>
+                        <li>Assigning tasks for initial UI Design and brainstorm interface ideas</li>
+                    </ul>
+                </details>
+                <div>
+                    <h4>Miscellaneous Comments/Concerns</h4>
+                    <ul>
+                        <li>Address past miscommunication within the team</li>
+                        <li>Should have one-on-ones between the team to help get to know one another</li>
+                    </ul>
+                </div>
             </div>
             <div>
                 <h4>Important Attachments/Links</h4>
                 <ul>
-                    <li><img src="./assets/img1.jpg" alt="Whiteboard Snapshot" width="500"/></li>
+                    <li><img class="main__attachment" src="./assets/img1.jpg" alt="Whiteboard Snapshot" width="500"/></li>
                     <li><a href="https://medium.com/@peterlee2068/software-design-principles-every-programmer-should-know-c164a83c6f87">Software Design Principles</a></li>
                     <li>
                         <p>Team bonding trip to Van Gogh exhibition</p>
@@ -83,7 +105,7 @@
                 <p>Make sure to vote on regular meeting times and gather UI inspirations by Friday.</p>
             </div>
         </main>
-        <section>
+        <section class="section__membership">
             <h2><i>Team Membership</i></h2>
             <p>Fill out this form to share information about yourself to the whole team! Make sure to check out other people's profiles too!</p>
             <form>
